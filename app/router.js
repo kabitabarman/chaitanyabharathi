@@ -7,6 +7,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('aboutus');
+  this.route('courses');
+  this.route('contactus');
+  this.route('downloads');
+  this.route('ourmission');
 });
 
 export default Router;
