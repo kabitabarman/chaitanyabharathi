@@ -1,45 +1,59 @@
 <header role="banner">
+  <div class="row hidden-xs hidden-sm">
+    <div class="col-md-12 col-lg-12">&nbsp;</div>
+  </div>
   <div class="row">
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
-      <img id="logo-main" src="/assets/images/brand-image.png" width="200px" alt="Chaitanya Bharathi" {{action 'goToIndex'}}/>
+    <div class="col-xs-4 col-xs-offset-1 hidden-xs hidden-sm vcenter" class="text-white">
+      <a href="tel:+917086026705" class="text-white">{{#fa-icon "phone"}} +91-7086026705{{/fa-icon}}</a><span class="tab-space"></span>|
+      <span class="tab-space"></span><a href="mailto:info@chaitanyabharathi.in" class="text-white"><i class="fa fa-envelope" aria-hidden="true"> info@chaitanyabharathi.in</i></a>
     </div>
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center" style="line-height: 77px;">
-      <a href="tel:+917086026705" class="hidden-xs">{{#fa-icon "phone" size="lg"}} +91-7086026705{{/fa-icon}}</a>
+    <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12 vcenter">
+      <marquee behavior="scroll" scrollamount="6" class="scrollingAnnouncement">
+        Admissions are in progress for class XI science stream with Boards &amp; IIT-JEE, NEET for the academic year 2017-18.
+      </marquee>
     </div>
   </div>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a href="tel:+917086026705" class="navbar-text visible-xs-inline-block">{{#fa-icon "phone" size="lg" style="padding-left:20px"}} +91-7086026705{{/fa-icon}}</a>
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      </div>
-
-      <div class="navbar-collapse collapse" id="menu-collapse">
-        <ul class="nav navbar-nav">
-          <li>{{#link-to 'index' }}{{#fa-icon "home" size="lg"}} Home{{/fa-icon}}{{/link-to}}</li>
-          <li>{{#link-to 'aboutus' }}{{#fa-icon "info-circle" size="lg"}} About Us{{/fa-icon}}{{/link-to}}</li>
-          <li>{{#link-to 'ourmission' }}{{#fa-icon "bullseye" size="lg"}} Our Mission{{/fa-icon}}{{/link-to}}</li>
-          <li>{{#link-to 'courses' }}{{#fa-icon "graduation-cap" size="lg"}} Courses{{/fa-icon}}{{/link-to}}</li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{#fa-icon "download" size="lg"}} Downloads{{/fa-icon}}<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href='/assets/pdf/prospectus.pdf' target="_blank">{{#fa-icon "file-pdf-o"}} Prospectus{{/fa-icon}}</a></li>
-              <li><a href='/assets/pdf/application.pdf' target="_blank">{{#fa-icon "file-pdf-o"}} Application{{/fa-icon}}</a></li>
-              <li><a href='/assets/pdf/students-data.pdf' target="_blank">{{#fa-icon "file-pdf-o"}} Students Data{{/fa-icon}}</a></li>
-              <li>{{link-to 'All Downloads' 'downloads' }}</li>
-            </ul>
-          </li>
-          <li>{{#link-to 'contactus' }}{{#fa-icon "map-marker" size="lg"}} Contact Us{{/fa-icon}}{{/link-to}}</li>
-        </ul>
+  <div class="row hidden-xs hidden-sm">
+    <div class="col-md-12 col-lg-12">&nbsp;</div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <img class="navbar-brand" src="/assets/images/brand-image.png" width="200px" alt="Chaitanya Bharathi" {{action
+                'goToIndex'}}/>
+              <a href="tel:+917086026705" class="navbar-text visible-xs-inline-block text-red">{{#fa-icon "phone" size="lg" style="padding-left:20px"}} +91-7086026705{{/fa-icon}}</a>
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="navbar-collapse collapse navbar-right" id="menu-collapse">
+              <ul class="nav navbar-nav">
+                <li>{{#link-to 'index' class="text-red"}}{{#fa-icon "home" size="lg"}} Home{{/fa-icon}}{{/link-to}}</li>
+                <li>{{#link-to 'aboutus' class="text-red"}}{{#fa-icon "info-circle" size="lg"}} About Us{{/fa-icon}}{{/link-to}}</li>
+                <li>{{#link-to 'ourmission' class="text-red"}}{{#fa-icon "bullseye" size="lg"}} Our Mission{{/fa-icon}}{{/link-to}}</li>
+                <li>{{#link-to 'courses' class="text-red"}}{{#fa-icon "graduation-cap" size="lg"}} Courses{{/fa-icon}}{{/link-to}}</li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle text-red" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{#fa-icon "download" size="lg"}} Downloads{{/fa-icon}}<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a class="text-red" href='/assets/pdf/application.pdf' target="_blank">{{#fa-icon "file-pdf-o"}} Application{{/fa-icon}}</a></li>
+                    <li><a class="text-red" href='/assets/pdf/students-data.pdf' target="_blank">{{#fa-icon "file-pdf-o"}} Students Data{{/fa-icon}}</a></li>
+                    <li>{{link-to 'All Downloads' 'downloads' class="text-red"}}</li>
+                  </ul>
+                </li>
+                <li>{{#link-to 'contactus' class="text-red"}}{{#fa-icon "map-marker" size="lg"}} Contact Us{{/fa-icon}}{{/link-to}}</li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
     </div>
-  </nav>
+  </div>
 </header>
 
 <div class="container">

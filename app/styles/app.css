@@ -1,39 +1,70 @@
-header[role="banner"] {
-  #logo-main {
-    display: block;
-    margin: 20px auto;
-        float: none;
-  }
+body {
+  background: #141E30;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #243B55, #141E30);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #243B55, #141E30);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: normal normal normal FontAwesome;
+}
+
+.navbar-default .navbar-nav>li>a {
+  line-height: 3em;
+}
+
+.navbar-brand {
+  height: 100px;
 }
 
 @media (min-width: 768px) {
-    .navbar .navbar-nav {
-        display: inline-block;
-        float: none;
-        vertical-align: top;
-    }
-
-    .navbar .navbar-collapse {
-        text-align: center;
-    }
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
 }
 
 .google-maps {
-    position: relative;
-    padding-bottom: 75%;
-    height: 0;
-    overflow: hidden;
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
 }
-
 
 .google-maps iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
 }
 
-.text-blue{
-    color: #011cb5;
+.text-blue {
+  color: #011cb5;
+}
+
+.text-red {
+  color: #d10000 !important;
+}
+
+.text-white {
+  color: white !important;
+}
+
+span.tab-space {
+  padding-left: 1em;
+}
+
+.scrollingAnnouncement{
+  color:yellow;
+  font-size:1.25em
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
