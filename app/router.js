@@ -6,7 +6,7 @@ const Router = Ember.Router.extend({
   rootURL: config.rootURL
 });
 
-Router.map(function() {
+Router.map(function () {
   this.route('aboutus');
   this.route('courses');
   this.route('contactus');
@@ -15,11 +15,13 @@ Router.map(function() {
 });
 
 Router.reopen({
-  notifyGoogleAnalytics: function() {
-    return ga('send', 'pageview', {
+  notifyGoogleAnalytics: function () {
+    if (typeof ga === 'function') {
+      return ga('send', 'pageview', {
         'page': this.get('url'),
         'title': this.get('url')
       });
+    }
   }.on('didTransition')
 });
 
