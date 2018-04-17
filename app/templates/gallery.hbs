@@ -1,32 +1,54 @@
 <script type="text/javascript">
-    $(document).ready(function() {
-        $("#lightgallery").lightGallery({
+    $(document).ready(function () {
+        $("[id^='lightgallery']").lightGallery({
             pause: 2000
         }).justifiedGallery({
             rowHeight: 200,
             margins: 2,
             border: 5,
             captions: true,
-            lastRow: 'center'
+            lastRow: 'justify'
         });
+        setTimeout(function(){$('.caption').removeClass( "hidden" );}, 2000);
     });
 </script>
 <div class="panel panel-default">
     <div class="panel-body text-justify">
-        <ul class="list-group">
-            <li class="list-group-item list-group-item-info text-blue">
-                <h4 class="list-group-item-heading">Photo Gallery</h4>
-            </li>
-            <li class="list-group-item">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+            <li><a data-toggle="tab" href="#showall">Show All</a></li>
+        </ul>
+        <div class="tab-content">
+            <ul id="home" class="tab-pane fade in active list-group">
+                {{#each model as |gallery|}}
+                    <li class="list-group-item list-group-item-info text-blue">
+                        <h4 class="list-group-item-heading">{{gallery.category}}</h4>
+                    </li>
+                    <li class="list-group-item">
+                        <div id="lightgallery{{index}}">
+                            {{#each gallery.images as |cimages|}}
+                                <a href="{{cimages.image}}">
+                                    <img src="{{cimages.thumbnail}}" />
+                                    <div class="caption text-center hidden">{{cimages.title}}</div>
+                                </a>
+                            {{/each}}
+                        </div>
+                    </li>
+                {{/each}}
+            </ul>
+            <ul id="showall" class="tab-pane fade in list-group">
                 <div id="lightgallery">
                     {{#each model as |gallery|}}
-                        <a href="{{gallery.image}}">
-                            <img src="{{gallery.thumbnail}}" />
-                            <div class="caption">{{gallery.title}}</div>
-                        </a>
+                        {{#each gallery.images as |cimages|}}
+                            <a href="{{cimages.image}}">
+                                <img src="{{cimages.thumbnail}}" />
+                                <div class="caption text-center hidden">{{cimages.title}}</div>
+                            </a>
+                        {{/each}}
                     {{/each}}
                 </div>
-            </li>
-        </ul>
+            </ul>
+        </div>
+
     </div>
 </div>
