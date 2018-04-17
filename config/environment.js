@@ -6,6 +6,10 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+    'ember-light-gallery': {
+      plugins: ['thumbnail', 'autoplay', 'video', 'fullscreen', 'pager', 'zoom', 'hash', 'share'],
+      transitions: true
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

@@ -12,6 +12,7 @@ Router.map(function () {
   this.route('contactus');
   this.route('downloads');
   this.route('ourmission');
+  this.route('gallery');
 });
 
 Router.reopen({

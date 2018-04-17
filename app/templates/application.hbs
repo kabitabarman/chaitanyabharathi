@@ -34,19 +34,20 @@
             </div>
             <div class="navbar-collapse collapse navbar-right" id="menu-collapse">
               <ul class="nav navbar-nav">
-                <li>{{#link-to 'index' class="text-red"}}{{#fa-icon "home" size="lg"}} Home{{/fa-icon}}{{/link-to}}</li>
-                <li>{{#link-to 'aboutus' class="text-red"}}{{#fa-icon "info-circle" size="lg"}} About Us{{/fa-icon}}{{/link-to}}</li>
-                <li>{{#link-to 'ourmission' class="text-red"}}{{#fa-icon "bullseye" size="lg"}} Our Mission{{/fa-icon}}{{/link-to}}</li>
-                <li>{{#link-to 'courses' class="text-red"}}{{#fa-icon "graduation-cap" size="lg"}} Courses{{/fa-icon}}{{/link-to}}</li>
+                <li>{{#link-to 'index' class="text-red"}}{{#fa-icon "home" size="md"}} Home{{/fa-icon}}{{/link-to}}</li>
+                <li>{{#link-to 'aboutus' class="text-red"}}{{#fa-icon "info-circle" size="md"}} About Us{{/fa-icon}}{{/link-to}}</li>
+                <li>{{#link-to 'ourmission' class="text-red"}}{{#fa-icon "bullseye" size="md"}} Our Mission{{/fa-icon}}{{/link-to}}</li>
+                <li>{{#link-to 'courses' class="text-red"}}{{#fa-icon "graduation-cap" size="md"}} Courses{{/fa-icon}}{{/link-to}}</li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle text-red" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{#fa-icon "download" size="lg"}} Downloads{{/fa-icon}}<span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle text-red" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{#fa-icon "download" size="md"}} Downloads{{/fa-icon}}<span class="caret"></span></a>
                   <ul class="dropdown-menu">
                     <li><a class="text-red" href='/assets/pdf/application.pdf' target="_blank">{{#fa-icon "file-pdf-o"}} Application{{/fa-icon}}</a></li>
                     <li><a class="text-red" href='/assets/pdf/students-data.pdf' target="_blank">{{#fa-icon "file-pdf-o"}} Students Data{{/fa-icon}}</a></li>
                     <li>{{link-to 'All Downloads' 'downloads' class="text-red"}}</li>
                   </ul>
                 </li>
-                <li>{{#link-to 'contactus' class="text-red"}}{{#fa-icon "map-marker" size="lg"}} Contact Us{{/fa-icon}}{{/link-to}}</li>
+                <li>{{#link-to 'gallery' class="text-red"}}{{#fa-icon "image" size="md"}} Gallery{{/fa-icon}}{{/link-to}}</li>
+                <li>{{#link-to 'contactus' class="text-red"}}{{#fa-icon "map-marker" size="md"}} Contact Us{{/fa-icon}}{{/link-to}}</li>
               </ul>
             </div>
           </div>
@@ -63,8 +64,6 @@
 <div class="container text-center">
   <hr />
   <div class="row">
-    <div class="col-md-1">
-    </div>
     <div class="col-md-2">
       <ul class="nav nav-pills nav-stacked">
         <li>{{#link-to 'aboutus' }}{{#fa-icon "info-circle"}} About Us{{/fa-icon}}{{/link-to}}</li>
@@ -87,10 +86,13 @@
     </div>
     <div class="col-md-2">
       <ul class="nav nav-pills nav-stacked">
-        <li>{{#link-to 'contactus' }}{{#fa-icon "map-marker"}} Contact Us{{/fa-icon}}{{/link-to}}</li>
+        <li>{{#link-to 'gallery' }}{{#fa-icon "image"}} Gallery{{/fa-icon}}{{/link-to}}</li>
       </ul>
     </div>
-    <div class="col-md-1">
+    <div class="col-md-2">
+      <ul class="nav nav-pills nav-stacked">
+        <li>{{#link-to 'contactus' }}{{#fa-icon "map-marker"}} Contact Us{{/fa-icon}}{{/link-to}}</li>
+      </ul>
     </div>
   </div>
   <hr>

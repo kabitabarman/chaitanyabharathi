@@ -2,6 +2,7 @@
   "name": "chaitanyabharathi",
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "bootswatch": "^3.3.7"
+    "bootswatch": "^3.3.7",
+    "Justified-Gallery": "~3.6.1"
   }
 }

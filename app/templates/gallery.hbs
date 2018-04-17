@@ -1,0 +1,32 @@
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#lightgallery").lightGallery({
+            pause: 2000
+        }).justifiedGallery({
+            rowHeight: 200,
+            margins: 2,
+            border: 5,
+            captions: true,
+            lastRow: 'center'
+        });
+    });
+</script>
+<div class="panel panel-default">
+    <div class="panel-body text-justify">
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-info text-blue">
+                <h4 class="list-group-item-heading">Photo Gallery</h4>
+            </li>
+            <li class="list-group-item">
+                <div id="lightgallery">
+                    {{#each model as |gallery|}}
+                        <a href="{{gallery.image}}">
+                            <img src="{{gallery.thumbnail}}" />
+                            <div class="caption">{{gallery.title}}</div>
+                        </a>
+                    {{/each}}
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
